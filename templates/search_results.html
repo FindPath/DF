@@ -1,0 +1,21 @@
+{#<p>You searched for: <strong>{{ query }}</strong></p>#}
+
+{#{% if items %}#}
+{##}
+{#<p>Found {{ items|length }} item{{ items|pluralize }}.</p>#}
+
+<ul>
+
+{#{% for item in items %}#}
+{##}
+{#<li>{{ item.ItemName }}</li>#}
+{##}
+{#{% endfor %}#}
+<li>{{ item.title }}</li>
+</ul>
+
+{#{% else %}#}
+{##}
+{#<p>No Items matched your search criteria.</p>#}
+{##}
+{#{% endif %}#}
